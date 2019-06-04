@@ -40,9 +40,9 @@ class Pokemon
       name = row[1]
       type = row[2]
       #binding.pry
-      p = self.new(id: id, name: name, type: type, db: db)
+      self.new(id: id, name: name, type: type, db: db)
       #p = self.new
-      binding.pry
+      #binding.pry
     end
     #binding.pry
 
