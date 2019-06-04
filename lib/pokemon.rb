@@ -12,7 +12,7 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    if self.id
+    if @id
       alter_hp(self.hp, db)
     else
       sql = <<-SQL
