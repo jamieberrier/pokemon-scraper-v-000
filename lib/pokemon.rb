@@ -25,7 +25,7 @@ class Pokemon
   def self.find(id, db)
     sql = <<-SQL
       SELECT *
-      FROM students
+      FROM pokemon
       WHERE name = ?
       LIMIT 1
     SQL
