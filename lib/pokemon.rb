@@ -27,7 +27,7 @@ class Pokemon
       WHERE id = ?
       LIMIT 1
     SQL
-    
+
     db.execute(sql, id).map do |row|
       @name = row[1]
       @type = row[2]
@@ -44,5 +44,7 @@ class Pokemon
     db.execute(sql, self.hp, self.id)
     self
 
+    sql = "UPDATE pokemon SET name = ?, type = ?, hp = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
 end
