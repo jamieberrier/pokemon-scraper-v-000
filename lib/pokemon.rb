@@ -41,7 +41,7 @@ class Pokemon
     @hp = new_hp
 
     sql = "UPDATE pokemon SET hp = ? WHERE id = ?"
-    db.execute(sql, self.name, self.type, self.hp, self.id)
+    db.execute(sql, self.hp, self.id)
     self
   end
 end
