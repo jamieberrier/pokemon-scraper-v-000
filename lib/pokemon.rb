@@ -34,6 +34,7 @@ class Pokemon
     end
 
     self.new(id: id, name: @name, type: @type, db: db)
+    binding.pry
   end
 
   def alter_hp(new_hp, db)
