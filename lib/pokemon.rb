@@ -35,8 +35,9 @@ class Pokemon
       #self.new(id: id, name: row[1], type: row[2], db: db)
       name = row[1]
       type = row[2]
+      binding.pry
     end
-    binding.pry
+    #binding.pry
     self.new(id: id, name: name, type: type, db: db)
   end
 end
