@@ -1,7 +1,7 @@
 # responsible for saving, adding, removing, or changing
 # anything about each Pokémon
 class Pokemon
-  attr_accessor :id, :name, :type, :db
+  attr_accessor :id, :name, :type, :db, :hp
 
   def initialize(id: id, name: name, type: type, db: db)
     @id = id
