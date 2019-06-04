@@ -13,7 +13,7 @@ class Pokemon
 
   def self.save(name, type, db)
     if self.id
-      alter_hp()
+      alter_hp(hp, db)
     else
       sql = <<-SQL
         INSERT INTO pokemon (name, type)
