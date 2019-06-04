@@ -45,6 +45,6 @@ class Pokemon
     self
 
     sql = "UPDATE pokemon SET name = ?, type = ?, hp = ? WHERE id = ?"
-    DB[:conn].execute(sql, self.name, self.grade, self.id)
+    db.execute(sql, self.name, self.type, self.hp, self.id)
   end
 end
