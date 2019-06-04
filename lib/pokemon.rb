@@ -44,7 +44,7 @@ class Pokemon
       
       #binding.pry
     end
-    #binding.pry
+    binding.pry
 
   end
 end
