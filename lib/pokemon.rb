@@ -40,7 +40,7 @@ class Pokemon
     #binding.pry
     #@hp = new_hp
 
-    sql = "UPDATE pokemon SET hp = new_hp WHERE id = ?"
-    db.execute(sql, self.id)
+    sql = "UPDATE pokemon SET hp = ? WHERE id = ?"
+    db.execute(sql, new_hp, self.id)
   end
 end
