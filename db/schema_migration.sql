@@ -1,6 +1,6 @@
 -- Write your sql commands to create your db schema here.
 -- It should create a table in a new table in the db/ directory.
-DB = {:conn => @db}
+DB = {:conn => SQLite3::Database.new('../pokemon.db')}
 
 CREATE TABLE pokemon (
   id INTEGER PRIMARY KEY,
