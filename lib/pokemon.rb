@@ -33,7 +33,7 @@ class Pokemon
       @name = row[1]
       @type = row[2]
     end
-
+    binding.pry
     self.new(id: id, name: @name, type: @type, db: db, hp: @hp)
   end
 
@@ -42,7 +42,7 @@ class Pokemon
     sql = "UPDATE pokemon SET name = ?, type = ?, hp = ? WHERE id = ?"
 
     db.execute(sql, self.name, self.type, self.hp, self.id)
-    
+
     #binding.pry
     #sql2 = "SELECT * FROM pokemon WHERE id = 1"
     #db.execute(sql2)
