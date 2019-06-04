@@ -34,7 +34,7 @@ class Pokemon
       @type = row[2]
     end
 
-    self.new(id: id, name: @name, type: @type, db: db, hp:)
+    self.new(id: id, name: @name, type: @type, db: db, hp: @hp)
   end
 
   def alter_hp(new_hp, db)
