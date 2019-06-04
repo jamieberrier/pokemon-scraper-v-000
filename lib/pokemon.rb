@@ -43,7 +43,7 @@ class Pokemon
 
     db.execute(sql, self.name, self.type, self.hp, self.id)
     binding.pry
-    sql = "SELECT * FROM pokemon WHERE id = 1"
-    db.execute(sql)
+    sql2 = "SELECT * FROM pokemon WHERE id = 1"
+    db.execute(sql2)
   end
 end
