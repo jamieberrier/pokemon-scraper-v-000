@@ -2,5 +2,8 @@
 # anything about each Pokémon
 class Pokemon
 
-  
+  def initialize
+
+  end
+
 end
