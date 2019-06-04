@@ -37,7 +37,7 @@ class Pokemon
       @name = row[1]
       @type = row[2]
     end
+    
     self.new(id: id, name: @name, type: @type, db: db)
-
   end
 end
