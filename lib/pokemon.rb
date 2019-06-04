@@ -42,6 +42,7 @@ class Pokemon
     sql = "UPDATE pokemon SET name = ?, type = ?, hp = ? WHERE id = ?"
 
     db.execute(sql, self.name, self.type, self.hp, self.id)
+    self.save
     #binding.pry
     #sql2 = "SELECT * FROM pokemon WHERE id = 1"
     #db.execute(sql2)
