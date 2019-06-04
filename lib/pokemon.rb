@@ -45,6 +45,7 @@ class Pokemon
       #binding.pry
     end
     binding.pry
+    self.new(id: id, name: @name, type: @type, db: db)
 
   end
 end
