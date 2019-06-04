@@ -41,7 +41,7 @@ class Pokemon
       @type = row[2]
       #binding.pry
       #self.new(id: id, name: name, type: type, db: db)
-      
+
       #binding.pry
     end
     binding.pry
