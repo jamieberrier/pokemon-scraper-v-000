@@ -12,7 +12,7 @@ class Pokemon
       self.update
     else
       sql = <<-SQL
-        INSERT INTO pokemon (name, album)
+        INSERT INTO pokemon (name, type)
         VALUES (?, ?)
         SQL
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
